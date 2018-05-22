@@ -59,8 +59,8 @@ for (i in 1:length(time.sequence)) {
 # <--- SOLVE IVP USING deSolve
 # WRITE SAMPLED DATA INTO FILE --->
 
-write( toJSON(IVP.observation), file = "../Data/review_observation_json.txt")
-write( toJSON(IVP.solution)   , file = "../Data/review_truestate_json.txt")
+write( toJSON(IVP.observation), file = "../../data/review_observation_json.txt")
+write( toJSON(IVP.solution)   , file = "../../data/review_truestate_json.txt")
 
 write.table(IVP.solution, 'state.data.txt', sep = "\t")
 write.table(IVP.observation,'observation.data.txt', sep = "\t")

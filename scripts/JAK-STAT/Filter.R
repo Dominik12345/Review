@@ -95,7 +95,7 @@ out$time <- rownames(out)
 
 write.table( out, 'state.filter.txt', sep = "\t")
 write( toJSON(out)   , 
-       file = "..//Data/review_filterstate_json.txt")
+       file = "../../data/review_filterstate_json.txt")
 # <--- WRITE SAMPLED DATA INTO FILE
 
 

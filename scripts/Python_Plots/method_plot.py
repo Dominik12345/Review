@@ -1,3 +1,7 @@
+### method_plot provides two plotting functions
+###
+###
+
 # import packages
 import json
 import numpy as np
@@ -5,7 +9,6 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.axisartist import Subplot
 
 hfont = {'fontname':'Helvetica'}
-
 
 # simple plot function
 def plot2d(data, variables ,filename):
@@ -150,24 +153,11 @@ def plot2d(data, variables ,filename):
     return None    
 
 
-############
-# TEST RUN #            
-############
-
-## get data from json file
-#file = open("C:/Users/kahl/Documents/Data/data_pythonplottest.txt",'r')
-#data = json.loads( file.read() )
-#file.close()
-## apply function
-##for i in range(0,len(data[1])):
-##    data[1][i] = data[1][i] 
-##    data[2][i] = data[2][i] 
-#
-#temp = plot2d(data, ['time', 'y_1','y_2'] ,'test' )
 
 
-# plotwitherrorbars plots time against means with errorbars of given standard 
-#    deviation
+
+
+
 def plotwitherrors(time, timeunit, means, meansunit, std):
     # ---> basic settings
     title = input('Title: ')
